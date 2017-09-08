@@ -1,0 +1,47 @@
+.navigation-main {
+
+  .navigation--list {
+    text-align: center;
+
+    .navigation--entry {
+
+      &.is--hovered {
+        .navigation--link {
+          color: @light-purple;
+        }
+      }
+    }
+
+    .navigation--entry {
+
+      &.is--active {
+        .navigation--link {
+          color: @light-purple;
+        }
+      }
+    }
+  }
+
+  .navigation--link {
+    .unitize(font-size, 16);
+    font-family: 'Fjalla One', sans-serif;
+  }
+}
+
+.advanced-menu {
+
+  .teaser--headline {
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  .item--level-0 {
+
+    .menu--list-item-link {
+      .unitize(font-size, 16);
+    }
+  }
+
+  .menu--level-0 > li > a {
+    font-family: 'Fjalla One', sans-serif;
+  }
+}

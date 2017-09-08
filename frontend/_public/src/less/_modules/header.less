@@ -1,0 +1,88 @@
+
+
+.header-main {
+  background-color: @light-gray;
+
+  .top-bar {
+    .unitize(right, 0);
+    .unitize(top, 0);
+    position: absolute;
+  }
+
+  .logo-main {
+
+    .logo--shop {
+      width: 100%;
+    }
+  }
+
+  .tbn--toggler {
+    .unitize-height(16);
+    .unitize-width(16);
+    &:before {
+      color: @light-gray;
+      .unitize(left, 4);
+      .unitize(top, -2);
+    }
+    &:hover {
+      background-color: @light-purple;
+    }
+    &.active {
+      background-color: @light-purple;
+      &:before {
+        .unitize(left, 4);
+        .unitize(top, -2);
+      }
+    }
+  }
+}
+
+.shop--navigation {
+
+  .entry--cart,
+  .entry--account,
+  .entry--notepad {
+
+    .btn {
+      &:hover {
+        color: @light-purple;
+      }
+    }
+  }
+
+  .entry--search {
+
+    .btn {
+      &:hover {
+
+        .icon--search {
+          color: @light-purple;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+
+  .shop--navigation {
+    .unitize(top, 0);
+  }
+
+  .header-main {
+
+    .logo-main {
+      .unitize-width(240);
+    }
+  }
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+
+  .header-main {
+
+    .logo-main {
+      .unitize-width(240);
+    }
+  }
+}
