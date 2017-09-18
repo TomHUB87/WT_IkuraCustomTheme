@@ -6,6 +6,7 @@
 
 {* Logo container *}
 {block name='frontend_index_logo_container' prepend}
+    {*TODO: Hier entfernen wenn an andere stelle shop-navigation.tpl eingbaut ist*}
     {include file="frontend/index/topbar-navigation.tpl"}
 {/block}
 

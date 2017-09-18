@@ -1,0 +1,25 @@
+@media screen and (min-width: @tabletViewportWidth) {
+
+  .sidebar-main {
+    .is--ctl-listing &,
+    .is--ctl-forms &,
+    .is--ctl-tellafriend &,
+    .is--ctl-newsletter &,
+    .is--ctl-sitemap &,
+    .is--ctl-custom &,
+    .is--ctl-note.is--user &,
+    .is--ctl-address &,
+    .is--ctl-account.is--user & {
+
+      & + .content--wrapper {
+        .unitize(margin-left, 0);
+      }
+    }
+  }
+
+  .sidebar-main {
+    &.off-canvas {
+      display: none;
+    }
+  }
+}
