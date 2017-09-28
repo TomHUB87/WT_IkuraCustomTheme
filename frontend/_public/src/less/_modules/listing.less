@@ -11,27 +11,28 @@
 .is--ctl-listing {
   &.is--no-sidebar {
 
+    .hero--headline {
+      .unitize(margin-bottom, 0);
+    }
+
     .hero-unit {
       .unitize(padding-top, 25);
       .unitize(padding-bottom, 25);
     }
   }
-}
-
-.is--ctl-listing {
 
   .product--box {
-    &.box--minimal {
+     &.box--minimal {
 
-      .product--hover-layer {
+       .product--hover-layer {
 
-        .product--title {
-          .unitize(margin-bottom, 0);
-          .unitize(padding-bottom, 40);
-        }
-      }
-    }
-  }
+         .product--title {
+           .unitize(margin-bottom, 0);
+           .unitize(padding-bottom, 40);
+         }
+       }
+     }
+   }
 }
 
 @media screen and(min-width: @tabletViewportWidth) {
