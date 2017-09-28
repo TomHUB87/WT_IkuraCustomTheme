@@ -1,9 +1,35 @@
-.listing{
+.listing {
 
   .product--box {
 
     .box--content {
       box-shadow: none;
+    }
+  }
+}
+
+.is--ctl-listing {
+  &.is--no-sidebar {
+
+    .hero-unit {
+      .unitize(padding-top, 25);
+      .unitize(padding-bottom, 25);
+    }
+  }
+}
+
+.is--ctl-listing {
+
+  .product--box {
+    &.box--minimal {
+
+      .product--hover-layer {
+
+        .product--title {
+          .unitize(margin-bottom, 0);
+          .unitize(padding-bottom, 40);
+        }
+      }
     }
   }
 }
