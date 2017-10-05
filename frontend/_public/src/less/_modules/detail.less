@@ -1,5 +1,21 @@
 .product--details {
 
+  .content--description {
+
+    .product--description {
+      color: @middle-gray;
+    }
+
+    .content--title {
+      &:first-child {
+        .unitize(font-size, 24);
+        text-transform: uppercase;
+        font-family: 'Fjalla One';
+        .unitize(letter-spacing, 2);
+      }
+    }
+  }
+
   .product--buybox {
 
     .price--discount-icon {
@@ -22,4 +38,3 @@
      .unitize(font-size, 14);
    }
 }
-
