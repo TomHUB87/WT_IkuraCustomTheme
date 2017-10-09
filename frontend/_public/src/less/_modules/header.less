@@ -15,6 +15,7 @@
   }
 
   .logo-main {
+    .unitize-width(150);
 
     .logo--shop {
       width: 100%;
@@ -73,13 +74,6 @@
   .shop--navigation {
     .unitize(top, 0);
   }
-
-  .header-main {
-
-    .logo-main {
-      .unitize-width(240);
-    }
-  }
 }
 
 @media screen and (min-width: @tabletLandscapeViewportWidth) {
@@ -87,7 +81,17 @@
   .header-main {
 
     .logo-main {
-      .unitize-width(240);
+      .unitize-width(260);
+    }
+  }
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+
+  .header-main {
+
+    .logo-main {
+      .unitize-width(290);
     }
   }
 }
