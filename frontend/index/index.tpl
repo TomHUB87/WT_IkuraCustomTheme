@@ -6,7 +6,7 @@
 
 {* Logo container *}
 {block name='frontend_index_logo_container' prepend}
-    {*TODO: Hier entfernen wenn an andere stelle shop-navigation.tpl eingbaut ist*}
+    {*TODO: Hier entfernen wenn an andere stelle shop-navigation.tpl eingebaut ist*}
     {include file="frontend/index/topbar-navigation.tpl"}
 {/block}
 
@@ -17,6 +17,24 @@
             <div class="footer--copyright">
                 <span>Copyright @ 2015 - White Touch</span>
             </div>
+        </div>
+    </div>
+{/block}
+
+{block name='frontend_index_content_wrapper'}
+    <div class="content--wrapper">
+        {block name='frontend_index_content'}{/block}
+        <div class="hero-unit category--teaser panel has--border is--rounded">
+            {if $sCategoryContent.cmsheadline && $sCategoryContent.cmstext}
+                <h1 class="hero--headline panel--title">{$sCategoryContent.cmsheadline}</h1>
+            {/if}
+            {if $sCategoryContent.cmstext}
+                <div class="hero--text panel--body is--wide">
+                    <div class="teaser--text-long">
+                        {$sCategoryContent.cmstext}
+                    </div>
+                </div>
+            {/if}
         </div>
     </div>
 {/block}
