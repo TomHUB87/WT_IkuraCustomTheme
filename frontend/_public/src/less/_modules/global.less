@@ -8,3 +8,12 @@ body {
     text-transform: none;
   }
 }
+
+@media screen and (min-width: @tabletViewportWidth) {
+
+  .content-main {
+    .is--ctl-custom & {
+      min-height: unset;
+    }
+  }
+}
