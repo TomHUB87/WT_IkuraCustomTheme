@@ -24,12 +24,13 @@
 {block name='frontend_index_content_wrapper'}
     <div class="content--wrapper">
         {block name='frontend_index_content'}{/block}
-        <div class="hero-unit category--teaser panel has--border is--rounded">
+        <div class="hero-unit category--teaser">
+            {debug}
             {if $sCategoryContent.cmsheadline && $sCategoryContent.cmstext}
-                <h1 class="hero--headline panel--title">{$sCategoryContent.cmsheadline}</h1>
+                <h1 class="hero--headline is-under-article">{$sCategoryContent.cmsheadline}</h1>
             {/if}
             {if $sCategoryContent.cmstext}
-                <div class="hero--text panel--body is--wide">
+                <div class="hero--text is-under-article">
                     <div class="teaser--text-long">
                         {$sCategoryContent.cmstext}
                     </div>
