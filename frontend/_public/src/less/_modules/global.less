@@ -9,6 +9,15 @@ body {
   }
 }
 
+.content-main {
+  .unitize(margin-bottom, 20);
+}
+
+.content-main--inner {
+  .unitize(padding-bottom, 0);
+  border-bottom: 20px solid @light-light-gray;
+}
+
 @media screen and (min-width: @tabletViewportWidth) {
 
   .content-main {
@@ -16,9 +25,4 @@ body {
       min-height: unset;
     }
   }
-
-  .content-main--inner {
-    .unitize(padding-bottom, 0);
-     border-bottom: 20px solid @light-light-gray;
-   }
 }
