@@ -24,7 +24,7 @@
 {block name='frontend_index_content_wrapper'}
     <div class="content--wrapper">
         {block name='frontend_index_content'}{/block}
-        <div class="hero-unit category--teaser">
+        <div class="hero-unit category--teaser is-under-article">
             {if $sCategoryContent.cmstext}
                 <div class="hero--text is-under-article">
                     <div class="teaser--text-long">
