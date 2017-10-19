@@ -15,6 +15,10 @@ body {
     .unitize(margin-bottom, 20);
     border-bottom: 20px solid @light-light-gray;
   }
+
+  .is--ctl-index & {
+    .unitize(padding-top, 0);
+  }
 }
 
 .content-main--inner {
@@ -24,11 +28,19 @@ body {
   }
 }
 
+div[id^="tsbadgeResponsiveTop_"] {
+  .unitize(margin-top, 40) !important;
+}
+
 @media screen and (min-width: @tabletViewportWidth) {
 
   .content-main {
     .is--ctl-custom & {
       min-height: unset;
+    }
+
+    .is--ctl-index & {
+      .unitize(padding-top, 40);
     }
   }
 }
