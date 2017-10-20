@@ -38,7 +38,16 @@ div[id^="tsbadgeResponsiveTop_"] {
   }
 }
 
+.content-main--inner {
+  .unitize(padding-right, 10);
+  .unitize(padding-left, 10);
+}
+
 @media screen and (min-width: @tabletViewportWidth) {
+
+  .content-main--inner {
+    .unitize-padding(0, 0, 20);
+  }
 
   .content-main {
     .is--ctl-custom & {
