@@ -29,7 +29,11 @@ body {
 }
 
 div[id^="tsbadgeResponsiveTop_"] {
-  .unitize(margin-top, 40) !important;
+  .is--ctl-listing &,
+  .is--ctl-index &,
+  .is--ctl-custom & {
+    .unitize(margin-top, 40) !important;
+  }
 }
 
 @media screen and (min-width: @tabletViewportWidth) {
