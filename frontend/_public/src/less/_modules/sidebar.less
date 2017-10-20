@@ -1,9 +1,5 @@
 @media screen and (min-width: @tabletViewportWidth) {
   .sidebar-main {
-    &.off-canvas {
-      display: none;
-    }
-
     .is--ctl-listing &,
     .is--ctl-forms &,
     .is--ctl-tellafriend &,
@@ -11,8 +7,10 @@
     .is--ctl-sitemap &,
     .is--ctl-custom &,
     .is--ctl-note.is--user &,
-    .is--ctl-address &,
-    .is--ctl-account.is--user & {
+    .is--ctl-address & {
+      &.off-canvas {
+        display: none;
+      }
 
       & + .content--wrapper {
         .unitize(margin-left, 0);

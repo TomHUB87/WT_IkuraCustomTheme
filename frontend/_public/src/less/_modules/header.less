@@ -1,6 +1,21 @@
-
 .header-main {
   background-color: @light-gray;
+  .is--ctl-register.is--minimal-header.is--target-checkout &,
+  .is--ctl-checkout.is--minimal-header & {
+
+    .logo--link {
+      .unitize-padding(0,0);
+    }
+
+    .logo-main {
+      .unitize-width(150);
+
+      .logo--shop {
+        max-width: 50%;
+        height: auto;
+      }
+    }
+  }
 
   .top-bar {
     .unitize(right, 0);
