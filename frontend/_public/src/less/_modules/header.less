@@ -1,5 +1,4 @@
 
-
 .header-main {
   background-color: @light-gray;
 
@@ -63,6 +62,45 @@
 
         .icon--search {
           color: @light-purple;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: @tabletViewportWidth) {
+  .is--ctl-checkout {
+    &.is--act-confirm {
+      &.is--user {
+        &.is--minimal-header {
+          .header-main {
+
+            .logo-main {
+
+              .logo--shop {
+                width: 35%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .is--ctl-register {
+    &.is--act-index {
+      &.is--target-checkout {
+        &.is--minimal-header {
+
+          .header-main {
+
+            .logo-main {
+
+              .logo--shop {
+                width: 35%;
+              }
+            }
+          }
         }
       }
     }
