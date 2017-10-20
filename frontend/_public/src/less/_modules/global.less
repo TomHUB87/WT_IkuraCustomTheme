@@ -16,7 +16,8 @@ body {
     border-bottom: 20px solid @light-light-gray;
   }
 
-  .is--ctl-index & {
+  .is--ctl-index &,
+  .is--ctl-register & {
     .unitize(padding-top, 0);
   }
 }
@@ -39,6 +40,11 @@ div[id^="tsbadgeResponsiveTop_"] {
   .is--ctl-account &,
   .is--ctl-checkout.is--act-cart & {
     .unitize(margin-top, 40) !important;
+  }
+
+
+  .is--ctl-register.is--target-checkout & {
+    .unitize(margin-top, 0) !important;
   }
 }
 
