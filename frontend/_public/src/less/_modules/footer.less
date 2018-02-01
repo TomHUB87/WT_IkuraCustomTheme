@@ -10,7 +10,6 @@
     &.column--newsletter {
 
       .column--desc {
-        .unitize(font-size, 14);
         line-height: 1.2;
         color: @middle-gray;
       }
@@ -27,13 +26,6 @@
         }
       }
     }
-
-    &.column--menu {
-
-      .column--content {
-        .unitize(font-size, 14);
-      }
-    }
   }
 
   .newsletter--button {
@@ -47,11 +39,18 @@
   }
 }
 
+.footer--vat-info {
+
+  .vat-info--text {
+    .unitize(font-size, 16);
+  }
+}
+
 .footer--copyright-container {
   background-color: black;
 
   .footer--copyright {
-    .unitize(font-size, 12);
+    font-size: initial;
     text-align: center;
     color: @light-gray;
   }
