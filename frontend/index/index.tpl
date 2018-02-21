@@ -34,3 +34,20 @@
         </div>
     </div>
 {/block}
+
+{block name='frontend_index_ikura_mainnavigation'}
+{/block}
+
+{block name='frontend_index_logo_container'}
+    {$smarty.block.parent}
+    {block name='frontend_index_ikura_mainnavigation_new'}
+        <nav class="navigation-main{if $theme.ikuraStikyMenu == 1} ikura-sticky-menu{/if}">
+            <div class="container" data-menu-scroller="true" data-listSelector=".navigation--list.container"
+                 data-viewPortSelector=".navigation--list-wrapper">
+                {block name="frontend_index_navigation_categories_top_include"}
+                    {include file='frontend/index/main-navigation.tpl'}
+                {/block}
+            </div>
+        </nav>
+    {/block}
+{/block}

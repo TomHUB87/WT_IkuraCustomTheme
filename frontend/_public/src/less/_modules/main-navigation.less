@@ -49,3 +49,36 @@
     display: none;
   }
 }
+
+@media screen and (min-width: @tabletViewportWidth) {
+
+  .sticky-wrapper {
+    .unitize(top, 60);
+    position: relative;
+  }
+
+  .navigation-main {
+
+    .navigation--link {
+      .unitize(padding, 5);
+    }
+
+    .container {
+      .unitize(height, 32);
+    }
+  }
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+
+  .navigation-main {
+
+    .navigation--link {
+      .unitize(padding, 12);
+    }
+
+    .container {
+      .unitize(height, 45);
+    }
+  }
+}
