@@ -57,4 +57,13 @@
       color: @dark-gray;
     }
   }
+
+  .is--ctl-listing {
+    &.is--no-sidebar {
+
+      .content-main.container {
+        .unitize(max-width, @breite-max-container);
+      }
+    }
+  }
 }
