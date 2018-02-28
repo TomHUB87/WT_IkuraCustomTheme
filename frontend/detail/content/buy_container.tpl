@@ -7,10 +7,10 @@
 {block name='frontend_detail_data_attributes_attr2'}
 {/block}
 
-{block name='frontend_detail_index_buy_container'}
-    {$smarty.block.parent}
-    {include file="frontend/detail/images.tpl"}
-{/block}
+{*{block name='frontend_detail_index_buy_container'}*}
+    {*{$smarty.block.parent}*}
+    {*{include file="frontend/detail/images.tpl"}*}
+{*{/block}*}
 
 {block name='frontend_detail_buy_laststock'}{/block}
 
