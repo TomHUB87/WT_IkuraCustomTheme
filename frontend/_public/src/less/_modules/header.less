@@ -115,15 +115,14 @@
 
 @media screen and (min-width: @tabletViewportWidth) {
 
-    .is--ctl-checkout.is--minimal-header,
-    .is--ctl-register.is--minimal-header,
-    .is--ctl-register.is--minimal-header.is--target-checkout {
-      .header-main .btn--back-top-shop {
+  .header-main {
+    .is--ctl-checkout.is--minimal-header &,
+    .is--ctl-register.is--minimal-header &,
+    .is--ctl-register.is--minimal-header.is--target-checkout & {
+      .btn--back-top-shop {
         .unitize(margin-top, 16);
       }
     }
-
-  .header-main {
 
     .logo-main {
       .unitize-width(250);
@@ -138,15 +137,28 @@
 
 @media screen and (min-width: @tabletLandscapeViewportWidth) {
 
-  .is--ctl-checkout.is--minimal-header,
-  .is--ctl-register.is--minimal-header,
-  .is--ctl-register.is--minimal-header.is--target-checkout {
-    .header-main .btn--back-top-shop {
-      .unitize(margin-top, 20);
-    }
-  }
-
   .header-main {
+    .box-shadow(0 1px 2px 0 @border-color);
+    .is--ctl-checkout.is--minimal-header &,
+    .is--ctl-register.is--minimal-header &,
+    .is--ctl-register.is--minimal-header.is--target-checkout & {
+      .btn--back-top-shop {
+        .unitize(margin-top, 20);
+      }
+
+      .logo--supportinfo {
+        .unitize(padding-left, 125);
+        .unitize(padding-top, 10);
+      }
+    }
+
+    .logo--shop {
+      width: 30%
+    }
+
+    .logo--supportinfo {
+      width: 35%;
+    }
 
     .logo-main {
       .unitize-width(260);
@@ -156,15 +168,14 @@
 
 @media screen and (min-width: @desktopViewportWidth) {
 
-  .is--ctl-checkout.is--minimal-header,
-  .is--ctl-register.is--minimal-header,
-  .is--ctl-register.is--minimal-header.is--target-checkout {
-    .header-main .btn--back-top-shop {
-      .unitize(margin-top, 22);
-    }
-  }
-
   .header-main {
+    .is--ctl-checkout.is--minimal-header &,
+    .is--ctl-register.is--minimal-header &,
+    .is--ctl-register.is--minimal-header.is--target-checkout & {
+      .btn--back-top-shop {
+        .unitize(margin-top, 22);
+      }
+    }
 
     .logo-main {
       .unitize-width(290);
