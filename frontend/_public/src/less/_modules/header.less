@@ -115,6 +115,14 @@
 
 @media screen and (min-width: @tabletViewportWidth) {
 
+    .is--ctl-checkout.is--minimal-header,
+    .is--ctl-register.is--minimal-header,
+    .is--ctl-register.is--minimal-header.is--target-checkout {
+      .header-main .btn--back-top-shop {
+        .unitize(margin-top, 16);
+      }
+    }
+
   .header-main {
 
     .logo-main {
@@ -130,6 +138,14 @@
 
 @media screen and (min-width: @tabletLandscapeViewportWidth) {
 
+  .is--ctl-checkout.is--minimal-header,
+  .is--ctl-register.is--minimal-header,
+  .is--ctl-register.is--minimal-header.is--target-checkout {
+    .header-main .btn--back-top-shop {
+      .unitize(margin-top, 20);
+    }
+  }
+
   .header-main {
 
     .logo-main {
@@ -139,6 +155,14 @@
 }
 
 @media screen and (min-width: @desktopViewportWidth) {
+
+  .is--ctl-checkout.is--minimal-header,
+  .is--ctl-register.is--minimal-header,
+  .is--ctl-register.is--minimal-header.is--target-checkout {
+    .header-main .btn--back-top-shop {
+      .unitize(margin-top, 22);
+    }
+  }
 
   .header-main {
 

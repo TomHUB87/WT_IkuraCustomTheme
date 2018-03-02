@@ -14,6 +14,10 @@ body {
   .is--ctl-index & {
     .unitize(margin-bottom, 20);
     border-bottom: 20px solid @light-light-gray;
+
+    &.container {
+      .unitize(border-bottom, 0);
+    }
   }
   .is--ctl-index &,
   .is--ctl-register & {
