@@ -53,18 +53,26 @@
 @media screen and (min-width: @tabletViewportWidth) {
 
   .sticky-wrapper {
-    .unitize(top, 60);
-    position: relative;
+    .unitize(bottom, 0);
+    .unitize(left, 0);
+    position: absolute;
+    width: 100%;
   }
 
   .navigation-main {
 
     .navigation--link {
       .unitize(padding, 5);
+      .is-sticky & {
+        .unitize(padding, 12);
+      }
     }
 
     .container {
       .unitize(height, 32);
+      .is-sticky & {
+        .unitize(height, 45);
+      }
     }
   }
 }
