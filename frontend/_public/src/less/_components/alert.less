@@ -1,5 +1,4 @@
 .alert {
-
   &.is--error {
     color: @light-purple;
     background: desaturate(lighten(@light-purple, 38%), 20%);
@@ -12,5 +11,14 @@
   &.is--warning {
     color: @light-purple;
     background: @light-light-gray;
+  }
+
+  &.is--success {
+    color: @light-purple;
+    background: @light-light-gray;
+
+    .alert--icon {
+      color: @light-purple;
+    }
   }
 }
